@@ -1,321 +1,459 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sourav Pati Port</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Roboto + Roboto Slab-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
-    <!-- animate.css-->
-    <link rel="stylesheet" href="vendor/animate.css/animate.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sourav Pati Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Google fonts - Roboto + Roboto Slab-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+  <!-- animate.css-->
+  <link rel="stylesheet" href="vendor/animate.css/animate.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Leaflet CSS - For the map-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <!-- Reference item-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container"><p class="navbar-brand">SR Software Developer</p>
-          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
-              <li class="nav-item"><a href="#technologies" class="nav-link link-scroll">Technologies</a></li>
-              <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
-              <li class="nav-item"><a href="#customers" class="nav-link link-scroll">Clients</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
-            </ul>
-          </div>
+</head>
+
+<body>
+  <!-- Reference item-->
+  <!-- navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <p class="navbar-brand">SR Software Developer</p>
+        <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+        <div id="navbarcollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+            <li class="nav-item"><a href="#technologies" class="nav-link link-scroll">Technologies</a></li>
+            <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link link-scroll">Education</a></li>
+            <li class="nav-item"><a href="#cert" class="nav-link link-scroll">Certifications/Patent</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            
+          </ul>
         </div>
-      </nav>
-    </header>
-    <!-- Intro Image-->
-   <!-- <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      </div>
+    </nav>
+  </header>
+  <!-- Intro Image-->
+  <!-- <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
       <div class="container text-center">
         <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div>
         <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, hola, नमस्ते !</h1>
         <p data-animate="slideInUp" class="h3 text-shadow text-400">I grind HTML and CSS and then weld them with PHP into beautiful and efficient websites.</p>
       </div>
     </section>-->
-    <!-- About-->
-    <section id="about" class="about-section">
-      <div class="container">
-        <header class="text-center">
-          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
-          <h2 data-animate="fadeInDown" class="title">About me</h2>
-        </header>
-        <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-12">
-            <p>Software engineer with 14+ years of experience in all stages of software development including architecting scalable distributed backend systems.
+  <!-- About-->
+  <section id="about" class="about-section">
+    <div class="container">
+      <header class="text-center">
+        <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker"
+            class="image rounded-circle img-fluid"></div>
+        <h2 data-animate="fadeInDown" class="title">About me</h2>
+      </header>
+      <div class="row">
+        <div data-animate="fadeInUp" class="col-lg-12">
+          <p>Software engineer with 14+ years of experience in all stages of software development including architecting
+            scalable distributed backend systems.
             Developing data streaming pipeline to feed big data to AI-enabled systems.
-            Developing and deploying production-ready systems in AWS and GCP, and creating prototypes and presenting to upper management.</p>
-          </div>
+            Developing and deploying production-ready systems in AWS and GCP, and creating prototypes and presenting to
+            upper management.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="technologies" class="about-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">Technologies</h2>
-        </header>
-        <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-12">
-            <!-- Technologies -->
-            <div class="container center">
-              <div class="row">
-                <div class="col-lg-3"> Java </div>
-                <div class="col-lg-3"> JavaScript </div>
-                <div class="col-lg-3"> TypeScript </div>
-                <div class="col-lg-3"> NodeJS </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"> AWS </div>
-                <div class="col-lg-3"> GCP </div>
-                <div class="col-lg-3"> Docker </div>
-                <div class="col-lg-3"> Git </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3">Apache Kafka </div>
-                <div class="col-lg-3"> Kubernetes </div>
-                <div class="col-lg-3"> Python </div>
-                <div class="col-lg-3"> SVN </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"> Microservice </div>
-                <div class="col-lg-3"> Spring Boot </div>
-                <div class="col-lg-3"> Spring Cloud Netflix </div>
-                <div class="col-lg-3">Angular</div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"> Jenkins </div>
-                <div class="col-lg-3"> Circle CI </div>
-                <div class="col-lg-3"> Teamcity </div>
-                <div class="col-lg-3">Gitlab AutoDevOps</div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-3">AWS Code Pipeline</div>
-                <div class="col-lg-3"> AWS Code Commit </div>
-                <div class="col-lg-3">NPM</div>
-                <div class="col-lg-3">IntelliJ</div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3">PostresSQL</div>
-                <div class="col-lg-3">MySQL</div>
-                <div class="col-lg-3">IBM DB2</div>
-                <div class="col-lg-3">MongoDB</div>
-              </div>
-
-
+  <section id="technologies" class="about-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 data-animate="fadeInDown" class="title">Technologies</h2>
+      </header>
+      <div class="row">
+        <div data-animate="fadeInUp" class="col-lg-12">
+          <!-- Technologies -->
+          <div class="container center">
+            <div class="row">
+              <div class="col-lg-3" > <p>Java</p> </div>
+              <div class="col-lg-3"> <p>JavaScript</p> </div>
+              <div class="col-lg-3"> <p>TypeScript</p> </div>
+              <div class="col-lg-3"> <p>NodeJS</p> </div>
             </div>
+            <div class="row">
+              <div class="col-lg-3"> <p> AWS </p> </div>
+              <div class="col-lg-3"> <p>GCP </p> </div>
+              <div class="col-lg-3"> <p>Docker </p> </div> 
+              <div class="col-lg-3"> <p>Git</p> </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3"><p>Apache Kafka</p> </div>
+              <div class="col-lg-3"> <p>Kubernetes</p> </div>
+              <div class="col-lg-3"> <p>Python </p></div>
+              <div class="col-lg-3"> <p>SVN </p> </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3"> <p> Microservice</p> </div>
+              <div class="col-lg-3"> <p>Spring For Apache Kafka</p> </div>
+              <div class="col-lg-3"><p>DynamoDb</p></div>
+              <div class="col-lg-3"><p>Angular</p></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3"> <p>Spring Boot</p></div>
+              <div class="col-lg-3"> <p>Spring Cloud Netflix</p> </div>
+              <div class="col-lg-3"> <p>Teamcity</p> </div>
+              <div class="col-lg-3"><p>Gitlab AutoDevOps</p></div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3"> <p>Jenkis</p></div>
+              <div class="col-lg-3"> <p>AWS Code Commit</p> </div>
+              <div class="col-lg-3"><p>NPM</p></div>
+              <div class="col-lg-3"><p>IntelliJ</p></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3"><p>PostresSQL</p></div>
+              <div class="col-lg-3"><p>MySQL</p></div>
+              <div class="col-lg-3"><p>IBM DB2</p></div>
+              <div class="col-lg-3"><p>MongoDB</p></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3"><p>DeepLearning and Nural Network</p></div>
+              <div class="col-lg-3"><p>SageMaker</p></div>
+            </div>
+
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Service-->
-    
-    <!--
+  <!-- Service-->
+
+  <!--
     *** REFERENCES IMAGE ***
     _________________________________________________________
     -->
-    <section id="references">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb-5 text-center">
-            <h2 data-animate="fadeInUp" class="title">My work</h2>
-            <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p>
-          </div>
-          <ul id="filter" data-animate="fadeInUp">
-            <li class="active"><a href="#" data-filter="all">All</a></li>
-            <li><a href="#" data-filter="webdesign">Aviation</a></li>
-            <li><a href="#" data-filter="seo">Oil And Gas</a></li>
-            <li><a href="#" data-filter="marketing">Finanace</a></li>
-            <li><a href="#" data-filter="other">Other</a></li>
-          </ul>
-          <div id="detail">
-            <div class="row">
-              <div class="col-lg-10 mx-auto"><span class="close">×</span>
-                <div id="detail-slider" class="owl-carousel owl-theme"></div>
-                <div class="text-center">
-                  <h1 id="detail-title" class="title"></h1>
-                </div>
-                <div id="detail-content"></div>
+  <section id="references">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="mb-5 text-center">
+          <h2 data-animate="fadeInUp" class="title">My work</h2>
+          <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest
+            for you.</p>
+        </div>
+        <ul id="filter" data-animate="fadeInUp">
+          <li class="active"><a href="#" data-filter="all">All</a></li>
+          <li><a href="#" data-filter="webdesign">Aviation</a></li>
+          <li><a href="#" data-filter="seo">Oil And Gas</a></li>
+          <li><a href="#" data-filter="marketing">Finanace</a></li>
+          <li><a href="#" data-filter="other">Other</a></li>
+        </ul>
+        <div id="detail">
+          <div class="row">
+            <div class="col-lg-10 mx-auto"><span class="close">×</span>
+              <div id="detail-slider" class="owl-carousel owl-theme"></div>
+              <div class="text-center">
+                <h1 id="detail-title" class="title"></h1>
               </div>
-            </div>
-          </div>
-          <!-- Reference detail-->
-          <div id="references-masonry" data-animate="fadeInUp">
-            <div class="row">
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/obs.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Objectstream, Inc</h3>
-                            <p>Data Intensive SAAS Product</p>
-                          </div>
-                        </div></a>
-                      <div data-images="" class="sr-only reference-description">
-                        <p>Architect SAAS product using domain-driven design and microservices</p>
-                        <p>Configure and maintain Kafka cluster, AWS Fargate, and ECS</p>
-                        <p>Create Kafka producer and consumer using Spring For Apache Kafka</p>
-                        <p>Create REST API using NodeJS, Serverless Framework, and deploy to AWS Lambda.</p> 
-                        <p>Research the most cost effective, yet powerful technologies that fit the needs of SAAS products and present to CEO and CTO.</p>
-                        <p>Mentor teammates on product design, code implementation, and API creation.</p> 
-                        <p>Presented to CEO about microservice architecture, pros and cons, and financial impact. •Resolved complex customer request and company roadblock by proposing and implementing integration of microservice with Google Drive API.</p>
-                        <p>Built proof of concept for AI-enabled predictive maintenance system and deployed to
-                            SageMaker. This POC is in the pipeline to become a future SAAS product.</p>
-                        <p>Built a proof of concept to capture ADS-B signal using Raspberry Pi, which streams data to Apache Kafka and displays flight position in real-time.</p> 
-                        <p> Presented POC at the 2019 Air Traffic Control Association (ATCA) annual conference in Washington, D.C. • Built machine learning algorithm to predict flight delay</p>
-                    
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/echo.jpeg" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Echo Energy</h3>
-                            <p>Multiple Projects</p>
-                          </div>
-                        </div></a>
-                      <div data-images="" class="sr-only reference-description">
-                        <p>Increased search speed by reducing SQL join queries and storing data in Elasticsearch.</p> 
-                        <p>Integrated Apache Kafka with Spring Boot and microservices and deployed in Kubernetes. </p>
-                        <p>Built CICD pipeline using Gitlab AutoDevOps and integrating with Kubernetes in GCP. </p>
-                        <p>Guided teammate on proper design and code implementation of storing geolocation data in Elasticsearch and display in Mapbox. </p>
-                        <p>Created Kafka source connectors and consumers for data streaming pipelines.</p>
-                        <p>Presented new software product concept, API implementation strategy, and business benefit to the CEO</p>
-                        <p>Substantially reduced company cost by deprecating unused software, switching Kafka cloud providers, reducing EC2 instances in AWS, and eliminating duplicate code.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/mbo-logo@2x.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">MBO Partners . Edmond . OK</h3>
-                            <p>Migrated Monolithic to Microservices</p>
-                          </div>
-                        </div></a>
-                      <div data-images="" class="sr-only reference-description">
-                        <p>Designed and developed microservice using Spring Cloud Netflix and DDD</p>
-                        <p>Built Spring Boot REST API and created unit tests using JUnit and Mockito</p>
-                        <p>Built event-driven microservice using Spring AXON Framework </p>
-                        <p>Created Kafka source connectors and consumers for data streaming pipelines </p>
-                        <p>Built proof of concept of saga pattern for long running transactions</p>
-                        <p>Used Spring Data as ORM tool for MongoDb, IBM DB2, and Elasticsearch</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/gs.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Project name 4</h3>
-                            <p>Short project description goes here...</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
-                      </div>
-                    </div>
-                  </div>
-               
-                
-            
+              <div id="detail-content"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Customers-->
-    <!-- Contact-->
-    <section id="contact" data-animate="bounceIn" class="contact-section contact">
-      <div class="container">
-        <header class="text-center">
-          <h2 class="title">Contact me</h2>
-        </header>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form id="contact-form" method="post" action="mailto:sourav.pati09@gmail.com">
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+        <!-- Reference detail-->
+        <div id="references-masonry" data-animate="fadeInUp">
+          <div class="row">
+            <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/obs.png" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Objectstream, Inc</h3>
+                      <p>Data Intensive SAAS Product</p>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
-                  </div>
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-outline-primary">Send message</button>
-                  </div>
+                </a>
+                <div data-images="" class="sr-only reference-description">
+                  <p>Architect SAAS product using domain-driven design and microservices</p>
+                  <p>Configure and maintain Kafka cluster, AWS Fargate, and ECS</p>
+                  <p>Create Kafka producer and consumer using Spring For Apache Kafka</p>
+                  <p>Create REST API using NodeJS, Serverless Framework, and deploy to AWS Lambda.</p>
+                  <p>Research the most cost effective, yet powerful technologies that fit the needs of SAAS products and
+                    present to CEO and CTO.</p>
+                  <p>Mentor teammates on product design, code implementation, and API creation.</p>
+                  <p>Presented to CEO about microservice architecture, pros and cons, and financial impact. •Resolved
+                    complex customer request and company roadblock by proposing and implementing integration of
+                    microservice with Google Drive API.</p>
+                  <p>Built proof of concept for AI-enabled predictive maintenance system and deployed to
+                    SageMaker. This POC is in the pipeline to become a future SAAS product.</p>
+                  <p>Built a proof of concept to capture ADS-B signal using Raspberry Pi, which streams data to Apache
+                    Kafka and displays flight position in real-time.</p>
+                  <p> Presented POC at the 2019 Air Traffic Control Association (ATCA) annual conference in Washington,
+                    D.C. • Built machine learning algorithm to predict flight delay</p>
+
                 </div>
               </div>
-            </form>
+            </div>
+            <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/echo.jpeg" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Echo Energy</h3>
+                      <p>Multiple Projects</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="" class="sr-only reference-description">
+                  <p>Increased search speed by reducing SQL join queries and storing data in Elasticsearch.</p>
+                  <p>Integrated Apache Kafka with Spring Boot and microservices and deployed in Kubernetes. </p>
+                  <p>Built CICD pipeline using Gitlab AutoDevOps and integrating with Kubernetes in GCP. </p>
+                  <p>Guided teammate on proper design and code implementation of storing geolocation data in
+                    Elasticsearch and display in Mapbox. </p>
+                  <p>Created Kafka source connectors and consumers for data streaming pipelines.</p>
+                  <p>Presented new software product concept, API implementation strategy, and business benefit to the
+                    CEO</p>
+                  <p>Substantially reduced company cost by deprecating unused software, switching Kafka cloud providers,
+                    reducing EC2 instances in AWS, and eliminating duplicate code.</p>
+                </div>
+              </div>
+            </div>
+            <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/mbo-logo@2x.png" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">MBO Partners . Edmond . OK</h3>
+                      <p>Migrated Monolithic to Microservices</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="" class="sr-only reference-description">
+                  <p>Designed and developed microservice using Spring Cloud Netflix and DDD</p>
+                  <p>Built Spring Boot REST API and created unit tests using JUnit and Mockito</p>
+                  <p>Built event-driven microservice using Spring AXON Framework </p>
+                  <p>Created Kafka source connectors and consumers for data streaming pipelines </p>
+                  <p>Built proof of concept of saga pattern for long running transactions</p>
+                  <p>Used Spring Data as ORM tool for MongoDb, IBM DB2, and Elasticsearch</p>
+                </div>
+              </div>
+            </div>
+            <div data-category="other" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/gs.png" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Goldman Sachs</h3>
+                      <p>Social Networking Site</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg"
+                  class="sr-only reference-description">
+                  <p> Developed a social networking site for G.S internal usage somehwat like Linked-In</p>
+                  <p> Created User Interface using AngularJS</p>
+                  <p> Developed a backend service for searching profile using Java and Elasticsearch</p>
+                  <p> Developed a backend service for finding connections using Java and Neo4J</p>
+                  <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i
+                        class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);"
+                      class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                </div>
+              </div>
+            </div>
+            <div data-category="other" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/att.png" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">ATT & T</h3>
+                      <p>E-Commerse Web App</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg"
+                  class="sr-only reference-description">
+                  <p> Developed a social networking site for G.S internal usage somehwat like Linked-In</p>
+                  <p> Created User Interface using AngularJS</p>
+                  <p> Developed a backend service for searching profile using Java and Elasticsearch</p>
+                  <p> Developed a backend service for finding connections using Java and Neo4J</p>
+                  <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i
+                        class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);"
+                      class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+              <div class="reference"><a href="#"><img src="img/devon-logo.png" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Devon Energy</h3>
+                      <p>Developed Web App for searching documents and Field Data Capture API</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="" class="sr-only reference-description">
+                  <p> Developed a web application using AngularJS, Solar, Java JAX-RS</p>
+                  <p> Developed RESTFul API using Java for Mobile application to capture Field Data </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </section>
-    <!-- Map-->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-lg-left">
-            <p class="social"><a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fa fa-google-plus"></i></a><a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
-          </div>
-          <!-- /.6-->
-          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2018 Your name goes here. All rights reserved.</p>
-          </div>
-          <div class="col-12 mt-4">
-            <p class="template-bootstrapious">Template by <a href='https://bootstrapious.com/p/bootstrap-carousel'>Bootstrapious</a> & <a href="https://fity.cz/ostrava">Fity</a></p>
-            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+    </div>
+  </section>  
+
+        <!-- EDUCATION-->
+
+  <section id="education" class="about-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 data-animate="fadeInDown" class="title">Education</h2>
+      </header>
+      <div class="row">
+        <div data-animate="fadeInUp" class="col-lg-12">
+          <!-- Technologies -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 text-center" > 
+                <p> Master Of Science</p> 
+                <p> Computer Science And Information System</p>
+                <p> Univercity Of Michigan</p>
+                <p> September 2012 - May 2014 </p>
+              </div>
+              <div class="col-lg-6 text-center" > 
+                <p> Bachelor of Technology </p> 
+                <p> Electronics and Telecommunication Engineering </p> 
+                <p> Biju Patnaik University of Technology </p>
+                <p> September 2001 -  April 2005 </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <script src="js/front.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <section id="cert" class="about-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 data-animate="fadeInDown" class="title"> CERTIFICATIONS AND PATENT</h2>
+      </header>
+      <div class="row">
+        <div data-animate="fadeInUp" class="col-lg-12">
+          <!-- Technologies -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 text-center" > 
+                <p> AWS Certified Solutions Architect</p> 
+                <p> DeepLearning and Nural Network</p>
+                <p>AI For Everyone</p>
+                <p> Sun Certified Java Programmer</p>
+              </div>
+              <div class="col-lg-6 text-center" > 
+                <p> <a href="https://www.ingentaconnect.com/content/ben/cseng/2013/00000006/00000001/art00009"> Cloud Computing Security - Patent</a> </p> 
+                <p> Electronics and Telecommunication Engineering </p> 
+                <p> Biju Patnaik University of Technology </p>
+                <p> September 2001 -  April 2005 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customers-->
+  <!-- Contact-->
+  <section id="contact" data-animate="bounceIn" class="contact-section contact">
+    <div class="container">
+      <header class="text-center">
+        <h2 class="title">Contact me</h2>
+      </header>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form id="contact-form" method="post" action="mailto:sourav.pati09@gmail.com">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="name" placeholder="Your firstname *" required="required"
+                    class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="surname" placeholder="Your lastname *" required="required"
+                    class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <textarea name="message" placeholder="Message for me *" rows="4" required="required"
+                    class="form-control"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-outline-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Map-->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-lg-left">
+          <p class="social"><a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a
+              href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i
+                class="fa fa-instagram"></i></a><a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i
+                class="fa fa-google-plus"></i></a><a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i
+                class="fa fa-envelope"></i></a></p>
+        </div>
+        <!-- /.6-->
+        <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
+          <p>© 2018 Your name goes here. All rights reserved.</p>
+        </div>
+        <div class="col-12 mt-4">
+          <p class="template-bootstrapious">Template by <a
+              href='https://bootstrapious.com/p/bootstrap-carousel'>Bootstrapious</a> & <a
+              href="https://fity.cz/ostrava">Fity</a></p>
+          <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+  <script src="js/front.js"></script>
+</body>
+
 </html>
