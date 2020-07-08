@@ -61,128 +61,81 @@
     <section id="about" class="about-section">
       <div class="container">
         <header class="text-center">
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
           <h2 data-animate="fadeInDown" class="title">About me</h2>
         </header>
         <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <p>Software engineer with 14+ years of experience in all stages of software development including architecting scalable distributed backend systems.</p>
-            <p>Developing data streaming pipeline to feed big data to AI-enabled systems.</p> 
-            <p>Developing and deploying production-ready systems in AWS and GCP, and creating prototypes and presenting to upper management.</p>
+          <div data-animate="fadeInUp" class="col-lg-12">
+            <p>Software engineer with 14+ years of experience in all stages of software development including architecting scalable distributed backend systems.
+            Developing data streaming pipeline to feed big data to AI-enabled systems.
+            Developing and deploying production-ready systems in AWS and GCP, and creating prototypes and presenting to upper management.</p>
           </div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <div class="skill-item">
-              <div class="progress-title">JAVA</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="90" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">Javascript</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">TypeScript</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 20%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">Python</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 20%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
-              </div>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
         </div>
       </div>
     </section>
-    <!-- Service-->
-    <section id="services" class="services-section">
+
+    <section id="technologies" class="about-section">
       <div class="container">
         <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">Professional Experience</h2>
+          <h2 data-animate="fadeInDown" class="title">Technologies</h2>
         </header>
-        <div class="row services">
+        <div class="row">
           <div data-animate="fadeInUp" class="col-lg-12">
-            <h3 class="heading mb-3 text-400">Objectstream, Inc (Currently work here) : July 2019 to Present </h3>
-              <p>Architect SAAS product using domain-driven design and microservices</p>
-              <p>Configure and maintain Kafka cluster, AWS Fargate, and ECS</p>
-              <p>Create Kafka producer and consumer using Spring For Apache Kafka</p>
-              <p>Create REST API using NodeJS, Serverless Framework, and deploy to AWS Lambda.</p> 
-              <p>Research the most cost effective, yet powerful technologies that fit the needs of SAAS products and present to CEO and CTO.</p>
-              <p>Mentor teammates on product design, code implementation, and API creation.</p> 
-              <p>Presented to CEO about microservice architecture, pros and cons, and financial impact. •Resolved complex customer request and company roadblock by proposing and implementing integration of microservice with Google Drive API.</p>
-              <p>Built proof of concept for AI-enabled predictive maintenance system and deployed to
-                  SageMaker. This POC is in the pipeline to become a future SAAS product.</p>
-              <p>Built a proof of concept to capture ADS-B signal using Raspberry Pi, which streams data to Apache Kafka and displays flight position in real-time.</p> 
-              <p> Presented POC at the 2019 Air Traffic Control Association (ATCA) annual conference in Washington, D.C. • Built machine learning algorithm to predict flight delay</p>
-          </div>
+            <!-- Technologies -->
+            <div class="container center">
+              <div class="row">
+                <div class="col-lg-3"> Java </div>
+                <div class="col-lg-3"> JavaScript </div>
+                <div class="col-lg-3"> TypeScript </div>
+                <div class="col-lg-3"> NodeJS </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"> AWS </div>
+                <div class="col-lg-3"> GCP </div>
+                <div class="col-lg-3"> Docker </div>
+                <div class="col-lg-3"> Git </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">Apache Kafka </div>
+                <div class="col-lg-3"> Kubernetes </div>
+                <div class="col-lg-3"> Python </div>
+                <div class="col-lg-3"> SVN </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"> Microservice </div>
+                <div class="col-lg-3"> Spring Boot </div>
+                <div class="col-lg-3"> Spring Cloud Netflix </div>
+                <div class="col-lg-3">Angular</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"> Jenkins </div>
+                <div class="col-lg-3"> Circle CI </div>
+                <div class="col-lg-3"> Teamcity </div>
+                <div class="col-lg-3">Gitlab AutoDevOps</div>
+              </div>
 
-          <div data-animate="fadeInUp" class="col-lg-12">
-            <h3 class="heading mb-3 text-400">Echo Energy : May 2018 - July 2019 </h3>
-              <p>Increased search speed by reducing SQL join queries and storing data in Elasticsearch</p>
-              <p>Integrated Apache Kafka with Spring Boot and microservices and deployed in Kubernetes</p>
-              <p>Guided teammate on proper design and code implementation of storing geolocation data
-                in Elasticsearch and display in Mapbox</p>
-              <p>Created Kafka source connectors and consumers for data streaming pipelines. 
-                <p>Presented new software product concept, API implementation strategy, and business
-                benefit to the CEO</p>
-              <p>Substantially reduced company cost by deprecating unused software, switching Kafka cloud providers, reducing EC2 instances in AWS, and eliminating duplicate code</p>
-          </div>
+              <div class="row">
+                <div class="col-lg-3">AWS Code Pipeline</div>
+                <div class="col-lg-3"> AWS Code Commit </div>
+                <div class="col-lg-3">NPM</div>
+                <div class="col-lg-3">IntelliJ</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">PostresSQL</div>
+                <div class="col-lg-3">MySQL</div>
+                <div class="col-lg-3">IBM DB2</div>
+                <div class="col-lg-3">MongoDB</div>
+              </div>
 
-          <div data-animate="fadeInUp" class="col-lg-12">
-            <h3 class="heading mb-3 text-400">MBO Partners : Januray 2016 - May 2018</h3>
-              <p>Designed and developed microservice using Spring Cloud Netflix and DDD</p>
-              <p>Built Spring Boot REST API and created unit tests using JUnit and Mockito</p>
-              <p>Built event-driven microservice using Spring AXON Framework </p>
-              <p>Created Kafka source connectors and consumers for data streaming pipelines </p>
-              <p>Built proof of concept of saga pattern for long running transactions</p>
-              <p>sed Spring Data as ORM tool for MongoDb, IBM DB2, and Elasticsearch</p>
-          </div>
 
-        </div>
-        <hr data-animate="fadeInUp">
-        <div data-animate="fadeInUp" class="text-center">
-          <p class="lead">Would you like to know more or just discuss something?</p>
-          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
-        </div>
-      </div>
-    </section>
-    <!-- Statistics-->
-    <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
-      <div class="container">
-        <div class="row showcase text-center"> 
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-align-justify"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">120</span><br>Websites</h5>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-users"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">50</span><br>Satisfied Clients</h5>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-copy"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">320</span><br>Projects</h5>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-font"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">333</span><br>Magazines and Brochures</h5>
             </div>
           </div>
         </div>
       </div>
-      <div class="dark-mask"></div>
     </section>
+
+    <!-- Service-->
+    
     <!--
     *** REFERENCES IMAGE ***
     _________________________________________________________
@@ -219,14 +172,23 @@
                     <div class="reference"><a href="#"><img src="img/obs.png" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Objectstream, Inc</h3>
+                            <p>Data Intensive SAAS Product</p>
                           </div>
                         </div></a>
-                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div data-images="" class="sr-only reference-description">
+                        <p>Architect SAAS product using domain-driven design and microservices</p>
+              <p>Configure and maintain Kafka cluster, AWS Fargate, and ECS</p>
+              <p>Create Kafka producer and consumer using Spring For Apache Kafka</p>
+              <p>Create REST API using NodeJS, Serverless Framework, and deploy to AWS Lambda.</p> 
+              <p>Research the most cost effective, yet powerful technologies that fit the needs of SAAS products and present to CEO and CTO.</p>
+              <p>Mentor teammates on product design, code implementation, and API creation.</p> 
+              <p>Presented to CEO about microservice architecture, pros and cons, and financial impact. •Resolved complex customer request and company roadblock by proposing and implementing integration of microservice with Google Drive API.</p>
+              <p>Built proof of concept for AI-enabled predictive maintenance system and deployed to
+                  SageMaker. This POC is in the pipeline to become a future SAAS product.</p>
+              <p>Built a proof of concept to capture ADS-B signal using Raspberry Pi, which streams data to Apache Kafka and displays flight position in real-time.</p> 
+              <p> Presented POC at the 2019 Air Traffic Control Association (ATCA) annual conference in Washington, D.C. • Built machine learning algorithm to predict flight delay</p>
+                    
                       </div>
                     </div>
                   </div>
@@ -234,8 +196,8 @@
                     <div class="reference"><a href="#"><img src="img/echo.jpeg" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 2</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Echo Energy</h3>
+                            <p>Multiple Projects</p>
                           </div>
                         </div></a>
                       <div data-images="img/main-slider3.jpg,img/main-slider1.jpg" class="sr-only reference-description">
@@ -341,32 +303,6 @@
       </div>
     </section>
     <!-- Customers-->
-    <section id="customers" class="customers-section bg-gray">
-      <div class="container">
-        <div class="col-md-12">
-          <div class="row align-items-center">
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-1.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-2.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-3.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-4.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-5.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-6.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Contact-->
     <section id="contact" data-animate="bounceIn" class="contact-section contact">
       <div class="container">
@@ -405,7 +341,6 @@
       </div>
     </section>
     <!-- Map-->
-    <div id="map"></div>
     <footer class="main-footer">
       <div class="container">
         <div class="row">
